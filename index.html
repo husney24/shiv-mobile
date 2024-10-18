@@ -419,35 +419,50 @@
           Got questions? We'd love to hear from you. Here’s how you can reach
           us...
         </p>
-        <form class="row g-3">
+        <form action="https://api.web3forms.com/submit" method="POST" class="row g-3">
+          <input type="hidden" name="access_key" value="2532c403-1630-456d-a4f2-4ef98b77bc2a">
+          
           <div class="col-md-6">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Your Name"
-              required
-            />
+              <label for="name" class="form-label">Your Name</label>
+              <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+              />
           </div>
+      
           <div class="col-md-6">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Your Email"
-              required
-            />
+              <label for="email" class="form-label">Your Email</label>
+              <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+              />
           </div>
+      
           <div class="col-12">
-            <textarea
-              class="form-control"
-              rows="5"
-              placeholder="Your Message"
-              required
-            ></textarea>
+              <label for="message" class="form-label">Your Message</label>
+              <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+              ></textarea>
           </div>
+      
           <div class="col-12 text-center">
-            <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" class="btn btn-primary">Send Message</button>
           </div>
-        </form>
+      </form>
+      
       </div>
     </section>
 
@@ -482,7 +497,7 @@
             </p>
             <p class="email">
               <i class="fas fa-envelope"></i
-              ><a href="shivmobilesgadgetssolution@gmail.com">shivmobilesgadgetssolution@gmail.com</a>
+              ><a href="mailto:shivmobilesgadgetssolution@gmail.com">shivmobilesgadgetssolution@gmail.com</a>
             </p>
 
           </div>
