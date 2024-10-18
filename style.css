@@ -22,6 +22,7 @@ body {
     background-size: 400% 400%; /* Expand background for smooth animation */
 }
 
+
 /* Keyframes for the gradient animation */
 @keyframes gradientAnimation {
     0% {
@@ -241,6 +242,39 @@ h2{
 
 }
 
+.carousel-item {
+    position: relative; /* Ensures the overlay is positioned relative to the carousel item */
+    height: 100vh; /* Set height for full-screen effect */
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 0; /* Keep overlay behind content */
+  }
+  
+  .header-content {
+    position: relative; /* Ensure content is positioned relative to the carousel item */
+    z-index: 1; /* Keep content above the overlay */
+    color: white; /* Set text color for visibility */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  h1 {
+    font-size: 3rem; /* Adjust font size */
+  }
+  
+  p {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
 .header-content {
     height: 100vh;
     display: flex;
@@ -256,7 +290,7 @@ h2{
 
 .header-content p {
     font-size: 2rem;
-    color: #5A9FD4; /* Light blue for description text */
+    color: #ffffff; /* Light blue for description text */
 }
 
 .btn-primary {
@@ -303,6 +337,8 @@ h2{
     justify-content: center; /* Center the items horizontally */
     align-items: center; /* Align items vertically */
 }
+
+
 
 .service-box {
     background-color: #ffffff8e;
@@ -426,18 +462,18 @@ h2{
     font-weight: bold;
     color: #000;
     margin-bottom: 15px;
-    font-size: 28px;
+    font-size: 20px;
   }
   
   .text-content h4 {
-    color: #FF9E1B;
+        color: #003B7A !important;
     font-size: 22px;
     margin-bottom: 20px;
   }
   
   .text-content p {
     font-size: 16px;
-    color: #555;
+    color: #000;
     margin-bottom: 15px;
   }
   
@@ -546,6 +582,8 @@ border-radius: 50px !important;
     color: #FF9E1B;
 }
 
+
+
 .footer-address i,
 .footer-newsletter .input-group i {
     margin-right: 10px;
@@ -613,4 +651,68 @@ border-radius: 50px !important;
     transition: background-color 0.3s;
     margin-bottom: 50px;
 }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.5rem; /* Adjust font size */
+        padding: 10px;
+    }
+
+    .header-content p {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .btn-primary {
+        font-size: 1rem; /* Adjust button size */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+    .service-box {
+        max-width: 100%; /* Ensure full width on small screens */
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+
+    .text-content {
+        padding-left: 20px; /* Adjust padding */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .image-container img {
+        margin-bottom: 20px; /* Space between image and text */
+        width: 100%; /* Make images responsive */
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 20px; /* Adjust padding */
+    }
+}
+
+/* Tablet Devices (min-width: 769px and max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-content h1 {
+        font-size: 3rem; /* Adjust font size */
+    }
+
+    .header-content p {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .service-box {
+        max-width: 45%; /* Adjust width for tablets */
+        margin: 20px; /* Margin for spacing */
+    }
+}
+
+/* Large Devices (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .service-box {
+        max-width: 30%; /* Wider boxes for larger screens */
+    }
+
+    .header-content h1 {
+        font-size: 4rem; /* Adjust font size */
+    }
 }

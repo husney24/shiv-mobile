@@ -39,8 +39,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="./img/nobglogoooooo.png" alt="Mobile Shop Logo" class="logo-image">
-        </a>        
+          <img
+            src="./img/nobglogoooooo.png"
+            alt="Mobile Shop Logo"
+            class="logo-image"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -76,14 +80,17 @@
 
     <!-- Home Slider Section -->
     <header id="home" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+      <div class="carousel-inner hero-content">
         <div
           class="carousel-item active"
           style="
             background-image: url('./dhruv-vishwakarma-eRZXC48gllU-unsplash.jpg');
           "
         >
+          <div class="overlay"></div>
+          <!-- Overlay for the image -->
           <div class="header-content">
+            <!-- Content remains visible -->
             <div>
               <h1>Your Gadget Shop</h1>
               <p>Latest gadgets and smartphones at your fingertips.</p>
@@ -95,7 +102,10 @@
           class="carousel-item"
           style="background-image: url('./kari-shea-1SAnrIxw5OY-unsplash.jpg')"
         >
+          <div class="overlay"></div>
+          <!-- Overlay for the image -->
           <div class="header-content">
+            <!-- Content remains visible -->
             <div>
               <h1>Quality You Can Trust</h1>
               <p>Top-tier products from trusted brands.</p>
@@ -109,7 +119,10 @@
             background-image: url('./alexander-mils-lCPhGxs7pww-unsplash.jpg');
           "
         >
+          <div class="overlay"></div>
+          <!-- Overlay for the image -->
           <div class="header-content">
+            <!-- Content remains visible -->
             <div>
               <h1>Affordable Prices</h1>
               <p>High-quality products at unbeatable prices.</p>
@@ -141,140 +154,171 @@
     <!-- Services Section -->
     <section id="services" class="service-section text-center">
       <div class="container">
-          <h2 class="section-title">Our Services</h2>
-          <div class="row">
-              <div class="col-md-6 mb-5 service-box">
-                  <i class="fas fa-mobile-alt"></i>
-                  <h4>Mobile Repair</h4>
-                  <p>We repair smartphones from all brands. Fast and reliable service.</p>
-              </div>
-              <div class="col-md-6 mb-5 service-box">
-                  <i class="fas fa-laptop"></i>
-                  <h4>Laptop Repair</h4>
-                  <p>Comprehensive laptop repairs including screen, battery, and more.</p>
-              </div>
-              <div class="col-md-4 mb-5 service-box">
-                  <i class="fas fa-clock"></i>
-                  <h4>Watch Repair</h4>
-                  <p>Expert repairs for Apple Watches, from screen to hardware issues.</p>
-              </div>
-              <div class="col-md-4 mb-5 service-box">
-                  <i class="fas fa-battery-three-quarters"></i>
-                  <h4>Battery Replacement</h4>
-                  <p>Replace your mobile or laptop batteries with high-quality replacements.</p>
-              </div>
-              <div class="col-md-4 mb-5 service-box">
-                  <i class="fas fa-tools"></i>
-                  <h4>All Mobile & Laptop Repairs</h4>
-                  <p>We handle all types of repair jobs for smartphones, laptops, and tablets.</p>
-              </div>
-              <div class="col-md-4 mb-5 service-box">
-                  <i class="fas fa-print"></i>
-                  <h4>Printing & Photo Copy</h4>
-                  <p>Professional printing and photocopy services for all your document needs.</p>
-              </div>
-              <div class="col-md-4 mb-5 service-box">
-                  <i class="fas fa-car"></i>
-                  <h4>Car Accessories</h4>
-                  <p>High-quality car accessories, including phone holders, chargers, and more.</p>
-              </div>
-              <div class="col-md-4 mb-5 service-box">
-                  <i class="fas fa-headphones-alt"></i>
-                  <h4>Mobile Accessories</h4>
-                  <p>Find the latest mobile accessories, including cases, earphones, and chargers.</p>
-              </div>
-              <div class="col-md-6 mb-5 service-box">
-                  <i class="fas fa-gamepad"></i>
-                  <h4>Console/PlayStation/Xbox Repair</h4>
-                  <p>Expert repairs for gaming consoles, including PlayStation and Xbox.</p>
-              </div>
-              <div class="col-md-6 mb-5 service-box">
-                  <i class="fas fa-charging-station"></i>
-                  <h4>Charging Port Replacement</h4>
-                  <p>Quick and affordable charging port replacements for smartphones and tablets.</p>
-              </div>
+        <h2 class="section-title">Our Services</h2>
+        <div class="row">
+          <div class="col-md-4 mb-5 service-box">
+            <i class="fas fa-car"></i>
+            <h4>Car Accessories</h4>
+            <p>
+              High-quality car accessories, including phone holders, chargers,
+              and more.
+            </p>
           </div>
-      </div>
-  </section>
-  
+          <div class="col-md-4 mb-5 service-box">
+            <i class="fas fa-headphones-alt"></i>
+            <h4>Mobile Accessories</h4>
+            <p>
+              Find the latest mobile accessories, including cases, earphones,
+              and chargers.
+            </p>
+          </div>
 
-    
-    <section id="features" class="features-section">
-        <div class="container">
-            <h2 class="section-title text-center">Our Features</h2>
-    
-            <!-- Feature 1: Left Image -->
-            <div class="boxcard row align-items-center mb-5">
-                <div class="col-md-6">
-                    <img src="./img/3.jpg" class="img-fluid" alt="Feature 1" />
-                </div>
-                <div class="col-md-6">
-                    <h3>Feature Title 1</h3>
-                    <p>
-                        Description of feature 1 goes here. This feature helps to improve the experience by providing great value.
-                    </p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-    
-            <!-- Feature 2: Right Image -->
-            <div class="boxcard row align-items-center mb-5">
-                <div class="col-md-6 order-md-2">
-                    <img src="./img/4.jpg" class="img-fluid" alt="Feature 2" />
-                </div>
-                <div class="col-md-6">
-                    <h3>Feature Title 2</h3>
-                    <p>
-                        Description of feature 2 goes here. This feature provides an outstanding benefit to our users.
-                    </p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-    
-            <!-- Feature 3: Left Image -->
-            <div class="boxcard row align-items-center mb-5">
-                <div class="col-md-6">
-                    <img src="./img/5.jpg" class="img-fluid" alt="Feature 3" />
-                </div>
-                <div class="col-md-6">
-                    <h3>Feature Title 3</h3>
-                    <p>
-                        Description of feature 3 goes here. Discover how this feature enhances our service.
-                    </p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-    
-            <!-- Feature 4: Right Image -->
-            <div class="boxcard row align-items-center mb-5">
-                <div class="col-md-6 order-md-2">
-                    <img src="./img/6.jpg" class="img-fluid" alt="Feature 4" />
-                </div>
-                <div class="col-md-6">
-                    <h3>Feature Title 4</h3>
-                    <p>
-                        Description of feature 4 goes here. This feature is essential for an optimal experience.
-                    </p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-    
-            <!-- Feature 5: Left Image -->
-            <div class="boxcard row align-items-center mb-5">
-                <div class="col-md-6">
-                    <img src="./img/yfdg.jpg" class="img-fluid" alt="Feature 5" />
-                </div>
-                <div class="col-md-6">
-                    <h3>Feature Title 5</h3>
-                    <p>
-                        Description of feature 5 goes here. Users benefit greatly from this amazing feature.
-                    </p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
+          <div class="col-md-4 mb-5 service-box">
+            <i class="fas fa-print"></i>
+            <h4>Printing & Photo Copy</h4>
+            <p>
+              Professional printing and photocopy services for all your document
+              needs.
+            </p>
+          </div>
+          <div class="col-md-6 mb-5 service-box">
+            <i class="fas fa-mobile-alt"></i>
+            <h4>Mobile Repair</h4>
+            <p>
+              We repair smartphones from all brands. Fast and reliable service.
+            </p>
+          </div>
+          <div class="col-md-6 mb-5 service-box">
+            <i class="fas fa-laptop"></i>
+            <h4>Laptop Repair</h4>
+            <p>
+              Comprehensive laptop repairs including screen, battery, and more.
+            </p>
+          </div>
+          <div class="col-md-4 mb-5 service-box">
+            <i class="fas fa-clock"></i>
+            <h4>Watch Repair</h4>
+            <p>
+              Expert repairs for Apple Watches, from screen to hardware issues.
+            </p>
+          </div>
+          <div class="col-md-4 mb-5 service-box">
+            <i class="fas fa-battery-three-quarters"></i>
+            <h4>Battery Replacement</h4>
+            <p>
+              Replace your mobile or laptop batteries with high-quality
+              replacements.
+            </p>
+          </div>
+          <div class="col-md-4 mb-5 service-box">
+            <i class="fas fa-tools"></i>
+            <h4>All Mobile & Laptop Repairs</h4>
+            <p>
+              We handle all types of repair jobs for smartphones, laptops, and
+              tablets.
+            </p>
+          </div>
+
+          <div class="col-md-6 mb-5 service-box">
+            <i class="fas fa-gamepad"></i>
+            <h4>Console/PlayStation/Xbox Repair</h4>
+            <p>
+              Expert repairs for gaming consoles, including PlayStation and
+              Xbox.
+            </p>
+          </div>
+          <div class="col-md-6 mb-5 service-box">
+            <i class="fas fa-charging-station"></i>
+            <h4>Charging Port Replacement</h4>
+            <p>
+              Quick and affordable charging port replacements for smartphones
+              and tablets.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-    
+
+    <section id="features" class="features-section">
+      <div class="container">
+        <h2 class="section-title text-center">Our Features</h2>
+
+        <!-- Feature 1: Left Image -->
+        <div class="boxcard row align-items-center mb-5">
+          <div class="col-md-6">
+            <img src="./img/3.jpg" class="img-fluid" alt="Feature 1" />
+          </div>
+          <div class="col-md-6">
+            <h3>Feature Title 1</h3>
+            <p>
+              Description of feature 1 goes here. This feature helps to improve
+              the experience by providing great value.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Feature 2: Right Image -->
+        <div class="boxcard row align-items-center mb-5">
+          <div class="col-md-6 order-md-2">
+            <img src="./img/4.jpg" class="img-fluid" alt="Feature 2" />
+          </div>
+          <div class="col-md-6">
+            <h3>Feature Title 2</h3>
+            <p>
+              Description of feature 2 goes here. This feature provides an
+              outstanding benefit to our users.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Feature 3: Left Image -->
+        <div class="boxcard row align-items-center mb-5">
+          <div class="col-md-6">
+            <img src="./img/5.jpg" class="img-fluid" alt="Feature 3" />
+          </div>
+          <div class="col-md-6">
+            <h3>Feature Title 3</h3>
+            <p>
+              Description of feature 3 goes here. Discover how this feature
+              enhances our service.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Feature 4: Right Image -->
+        <div class="boxcard row align-items-center mb-5">
+          <div class="col-md-6 order-md-2">
+            <img src="./img/6.jpg" class="img-fluid" alt="Feature 4" />
+          </div>
+          <div class="col-md-6">
+            <h3>Feature Title 4</h3>
+            <p>
+              Description of feature 4 goes here. This feature is essential for
+              an optimal experience.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Feature 5: Left Image -->
+        <div class="boxcard row align-items-center mb-5">
+          <div class="col-md-6">
+            <img src="./img/yfdg.jpg" class="img-fluid" alt="Feature 5" />
+          </div>
+          <div class="col-md-6">
+            <h3>Feature Title 5</h3>
+            <p>
+              Description of feature 5 goes here. Users benefit greatly from
+              this amazing feature.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section">
@@ -282,10 +326,10 @@
         <h2 class="section-title">Our Products</h2>
 
         <div class="row">
-            <!-- <div class="col-md-6">
+          <!-- <div class="col-md-6">
                 <img src="./img/yfdg.jpg" class="img-fluid" alt="Product 1" />
             </div> -->
-<!-- 
+          <!-- 
           <div class="col-md-6">
             <img src="./img/3.jpg" class="img-fluid" alt="Product 3" />
           </div> -->
@@ -298,12 +342,12 @@
           <div class="col-md-4">
             <img src="./img/6.jpg" class="img-fluid" alt="Product 6" />
           </div> -->
-<!-- 
+          <!-- 
           <div class="col-md-4">
             <img src="./img/9.jpg" class="img-fluid" alt="Product 9" />
           </div> -->
 
-                    <!-- <div class="col-md-4">
+          <!-- <div class="col-md-4">
                 <img src="./img/10.jpg" class="img-fluid" alt="Product 10">
             </div> -->
 
@@ -316,55 +360,54 @@
           <div class="col-md-4">
             <img src="./img/8.jpg" class="img-fluid" alt="Product 8" />
           </div>
-
-
         </div>
       </div>
     </section>
 
     <!-- About Section -->
-    
+
     <section id="about" class="about-section">
       <div class="container">
-      <h2 class="section-title text-center">About Us</h2>
+        <h2 class="section-title text-center">About Us</h2>
 
-      <div class="content-wrapper">
-        <!-- Left side with the image -->
-        <div class="image-container">
-          <img src="./img/about.jpg" alt="Shop Image" />
-        </div>
-        
-        <!-- Right side with the text content -->
-        <div class="text-content">
-          <h2>SHIV MOBILE - Mobile & Gadgets</h2>
-          <h4>REPAIR - UNLOCKING - ACCESSORIES.</h4>
-          <p>
-            We provide quick service process at our mobile store. Fonez World is 
-            one of the most reasonable mobile phone service stores at Sheffield, 
-            offering 300+ repairing services available for all the leading brands 
-            like iPhones, iPads, Samsung, Google Pixel, Oppo, Huawei, and more.
-          </p>
-          <p>
-            Our services include touch screen repair/replacement, liquid and water 
-            damage repair, broken and physical damage repair, mainboard chip-level 
-            repairing, charging port, power button, side button, camera repair, 
-            headphone jack, wifi, Bluetooth, battery replacement, software 
-            troubleshooting, up-gradation, and many more.
-          </p>
-          <a href="#" class="btn">Know More</a>
+        <div class="content-wrapper">
+          <!-- Left side with the image -->
+          <div class="image-container">
+            <img src="./img/about.jpg" alt="Shop Image" />
+          </div>
+
+          <!-- Right side with the text content -->
+          <div class="text-content">
+            <h2>Shiv Mobile & Gadgets Solutions ltd</h2>
+            <h4 class="repair">REPAIR - UNLOCKING - ACCESSORIES.</h4>
+            <p>
+              We provide quick service process at our mobile store. Fonez World
+              is one of the most reasonable mobile phone service stores at
+              Sheffield, offering 300+ repairing services available for all the
+              leading brands like iPhones, iPads, Samsung, Google Pixel, Oppo,
+              Huawei, and more.
+            </p>
+            <p>
+              Our services include touch screen repair/replacement, liquid and
+              water damage repair, broken and physical damage repair, mainboard
+              chip-level repairing, charging port, power button, side button,
+              camera repair, headphone jack, wifi, Bluetooth, battery
+              replacement, software troubleshooting, up-gradation, and many
+              more.
+            </p>
+            <a href="#" class="btn">Know More</a>
+          </div>
         </div>
       </div>
-    </div>
     </section>
-    
-    
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <h2 class="section-title text-center">Contact Us</h2>
       <div class="container">
         <p class="text-center">
-          Got questions? We'd love to hear from you. Here’s how you can reach us...
+          Got questions? We'd love to hear from you. Here’s how you can reach
+          us...
         </p>
         <form class="row g-3">
           <div class="col-md-6">
@@ -397,76 +440,93 @@
         </form>
       </div>
     </section>
-    
 
-<div class="map">
-    <iframe
-    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3676.217180462399!2d88.3516618138613!3d22.86843428582521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1729171882215!5m2!1sen!2sin"
-    width="80%"
-    height="300"
-    style="border: 0"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.2004682333395!2d0.5016081758592786!3d51.56455840652703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8c5baa5a1bee1%3A0xd193a1ea850e8ea1!2sShiv%20Mobile%20%26%20Gadgets%20Solutions%20ltd!5e0!3m2!1sen!2sin!4v1729254089912!5m2!1sen!2sin"
+        width="80%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <!-- Left Side: Address and Contact Information -->
-      <div class="col-md-3 footer-address">
-        <h4>Contact Us</h4>
-        <p><i class="fas fa-map-marker-alt"></i> Unit-11, Hillsborough Barracks Shopping Mall, Langsett Rd, Hillsborough, Sheffield, S6 2LR, United Kingdom</p>
-        <p><i class="fas fa-phone-alt"></i> 0114 233 2261</p>
-        <p><i class="fas fa-envelope"></i> fonezworld1@gmail.com</p>
-      </div>
-      
-      <!-- Center: Services -->
-      <div class="col-md-3 footer-services">
-        <h4>Device Repair</h4>
-        <ul>
-          <li><a href="#">iPhone Repair</a></li>
-          <li><a href="#">iPad Repair</a></li>
-          <li><a href="#">Samsung Repair</a></li>
-          <li><a href="#">Huawei Repair</a></li>
-        </ul>
-      </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Left Side: Address and Contact Information -->
+          <div class="col-md-3 footer-address">
+            <h4>Contact Us</h4>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              Shiv Mobile & Gadgets Solutions ltd,
+               2 Station Ln, Pitsea, 
+               Basildon SS13 3BG, 
+              
+                United Kingdom
+               
+            </p>
+            <p><i class="fas fa-phone-alt"></i>+44 7880 088626</p>
+            <p>
+              <i class="fas fa-envelope"></i
+              >shivmobilesgadgetssolution@gmail.com
+            </p>
+          </div>
 
-      <!-- Center Right: Quick Links -->
-      <div class="col-md-3 footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">Opening Hours</a></li>
-          <li><a href="#">Help & FAQs</a></li>
-          <li><a href="#">My Account</a></li>
-          <li><a href="#">For Sale</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
+          <!-- Center: Services -->
+          <div class="col-md-3 footer-services">
+            <h4>Device Repair</h4>
+            <ul>
+              <li><a href="#">iPhone Repair</a></li>
+              <li><a href="#">iPad Repair</a></li>
+              <li><a href="#">Laptop Repair</a></li>
+              <li><a href="#">Samsung Repair</a></li>
+              <li><a href="#">Huawei Repair</a></li>
+            </ul>
+          </div>
 
-      <!-- Right Side: Newsletter -->
-      <div class="col-md-3 footer-newsletter">
-        <h4>Newsletter</h4>
-        <form>
-          <div class="input-group">
-            <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
-            <div class="input-group-append">
-              <button class="send" type="submit">Send</button>
+          <!-- Center Right: Quick Links -->
+          <div class="col-md-3 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#"> Services </a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Right Side: Newsletter -->
+          <div class="col-md-3 footer-newsletter">
+            <h4>Newsletter</h4>
+            <form>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  aria-label="Email"
+                />
+                <div class="input-group-append">
+                  <button class="send" type="submit">Send</button>
+                </div>
+              </div>
+            </form>
+            <div class="social-icons">
+              <a href=" https://www.facebook.com/profile.php?id=100076064220939"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+              <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+              <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
             </div>
           </div>
-        </form>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
-
+    </footer>
 
     <!-- Footer -->
     <footer class="footer2">
