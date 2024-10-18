@@ -743,7 +743,6 @@ border-radius: 50px !important;
 
 .header-content p {
     font-size: 1rem;
-    color: #5A9FD4; /* Light blue for description text */
 }
 
 .btn-primary {
@@ -818,4 +817,17 @@ border-radius: 50px !important;
     .header-content h1 {
         font-size: 4rem; /* Adjust font size */
     }
+}
+
+
+.email i{
+    margin-right: 3px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #FF7700;
 }
