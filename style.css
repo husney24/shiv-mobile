@@ -58,6 +58,109 @@ body {
     transform: scale(0.725);
 }
 
+.wp {
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .wp img {
+    height: 60px;
+    width: 60px;
+    transition: transform 0.2s;
+  }
+  
+  .wp img:hover {
+    transform: scale(1.1);
+  }
+  
+  .circle-ripple {
+    background-color: #25D366; /* WhatsApp green */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vw;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(66, 219, 135, 0.6); /* Initial glow */
+    transition: all .3s ease-in-out;
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Keyframe for the pulse (blinking) effect */
+  @keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(66, 219, 135, 0.6);
+    }
+    50% {
+        transform: scale(1.1); /* Slight zoom for pulse effect */
+        box-shadow: 0 0 30px rgba(66, 219, 135, 0.9); /* Stronger glow */
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(66, 219, 135, 0.6);
+    }
+  }
+  
+  
+  .wp-message {
+    position: absolute;
+    white-space: nowrap;
+    padding: 10px 15px;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    bottom: 10px;
+    right: 70px; /* Start from the right side of the icon */
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.4s ease;
+  }
+  
+  .wp:hover .wp-message {
+    opacity: 1;
+    transform: translateX(0);
+    right: calc(100% + 20px); /* Move the message out from the icon */
+  }
+  
+  .wp::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent #25D366 transparent transparent;
+    right: 60px; /* Align arrow with the message */
+    bottom: 26px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .wp:hover::after {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+  
+    .wp-message {
+      font-size: 10px;
+      padding: 8px 12px;
+      right: 10px; /* Adjust right positioning for smaller screens */
+    }
+  
+    .wp::after {
+      right: 50px; /* Align arrow with the smaller icon */
+    }
+  }
+
+
 .divider {
     position: absolute;
     z-index: 2;
