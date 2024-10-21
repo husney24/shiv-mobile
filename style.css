@@ -478,6 +478,7 @@ body {
     margin-top: 20px; /* Space above the button */
 }
 
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .features-section .row {
@@ -487,6 +488,11 @@ body {
     .features-section .col-md-6 {
         margin-bottom: 20px; /* Space between stacked elements */
     }
+
+    .carousel-item img{
+        
+        
+      }
 }
 
 /* Main Section Styling */
