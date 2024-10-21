@@ -667,7 +667,7 @@ border-radius: 50px !important;
 .footer ul li a {
     color: #ddd;
     font-size: 14px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .footer ul li a:hover {
@@ -823,11 +823,19 @@ border-radius: 50px !important;
 .email i{
     margin-right: 3px;
 }
+.footer2{
+    display: flex;
+    justify-content: space-around;
+}
+.footer2 p{
+    font-size: 16px;
+}
 
-a{
+.footer2 a{
     text-decoration: none;
     color: #fff;
+
 }
-a:hover{
+.footer2 a:hover{
     color: #FF7700;
 }
