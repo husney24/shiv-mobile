@@ -181,6 +181,7 @@ body {
     bottom: 20px;
     position: fixed;
     z-index: 1;
+    cursor: pointer;
   }
   
   .wp img {
@@ -449,17 +450,6 @@ h2{
 .navbar-brand {
     padding: 0;  /* Remove default padding */
 }
-/* Ensure the logo image is properly sized and aligned */
-.logo-image {
-    height: 50px; /* Adjust the height as per your design */
-    width: auto;  /* Maintain aspect ratio */
-}
-
-/* Optional: Adjust the spacing around the logo */
-.navbar-brand {
-    padding: 0;  /* Remove default padding */
-}
-
 
 /* Header Slider */
 .carousel-item {
