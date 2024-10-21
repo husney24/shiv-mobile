@@ -181,7 +181,6 @@ body {
     bottom: 20px;
     position: fixed;
     z-index: 1;
-    cursor: pointer;
   }
   
   .wp img {
@@ -442,7 +441,7 @@ h2{
 
 /* Ensure the logo image is properly sized and aligned */
 .logo-image {
-    height: 70px; /* Adjust the height as per your design */
+    height: 80px; /* Adjust the height as per your design */
     width: auto;  /* Maintain aspect ratio */
 }
 
